@@ -1,14 +1,16 @@
 #' Split a string
 #'
-#' @param x A Character vector
-#' @param split What to split on
+#' @param string A Char vec
+#' @param pattern what to split on
+#' @param n number of chars
+#' @inheritParams stringr::str_split
 #'
-#' @returns A Character Vector
+#' @returns A Char vec
 #' @export
 #'
 #' @examples
-#' x <- "alpha, bravo, charlie, delta"
-#' strsplit1(x, split = ",")
+#' y <-  "19.1.2.3
+#' str_split_one(y, pattern = stringr::fixed(".))
 str_split_one <- function(string, pattern, n = Inf){
   stopifnot(is.character(string), length(string) <= 1)
   if (length(string) == 1) {
