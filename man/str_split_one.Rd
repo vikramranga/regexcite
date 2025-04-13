@@ -20,6 +20,6 @@ A Char vec
 Split a string
 }
 \examples{
-y <-  "19.1.2.3
-str_split_one(y, pattern = stringr::fixed(".))
+y <-  "19.1.2.3"
+str_split_one(y, pattern = stringr::fixed("."))
 }
