@@ -9,8 +9,8 @@
 #' @export
 #'
 #' @examples
-#' y <-  "19.1.2.3
-#' str_split_one(y, pattern = stringr::fixed(".))
+#' y <-  "19.1.2.3"
+#' str_split_one(y, pattern = stringr::fixed("."))
 str_split_one <- function(string, pattern, n = Inf){
   stopifnot(is.character(string), length(string) <= 1)
   if (length(string) == 1) {
